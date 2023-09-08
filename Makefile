@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 .PHONY : setup
 
-umich-feb-2022.slides.html : setup
+cornell-sep-2023.slides.html : setup
 
 setup :
 	$(MAKE) -C figs

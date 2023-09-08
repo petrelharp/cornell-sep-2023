@@ -12,7 +12,7 @@ fi
 
 FILE="$1"
 # the first directories have priority
-SOURCEDIRS="/home/peter/teaching/talks/osu-may-2021 /home/peter/teaching/talks/nw_prob_2019 /home/peter/teaching/talks/ist-oct-2020 /home/peter/teaching/talks/reed-aug-2020 /home/peter/teaching/talks/uo-oct-2019 /home/peter/teaching/talks/france-may-2019 /home/peter/teaching/talks/idaho-march-2019 /home/peter/teaching/talks/madison-sept-2018"
+SOURCEDIRS="/home/peter/teaching/talks/umich-feb-2022 /home/peter/teaching/talks/osu-may-2021 /home/peter/teaching/talks/nw_prob_2019 /home/peter/teaching/talks/ist-oct-2020 /home/peter/teaching/talks/reed-aug-2020 /home/peter/teaching/talks/uo-oct-2019 /home/peter/teaching/talks/france-may-2019 /home/peter/teaching/talks/idaho-march-2019 /home/peter/teaching/talks/madison-sept-2018"
 
 FIGS="$(grep "\!\[" $FILE  | sed -e 's/.*(//' | sed -e 's/).*//')"
 FIGS="$FIGS $(grep "src=" $FILE  | sed -e 's/.*src="//' | sed -e 's/".*//')"
