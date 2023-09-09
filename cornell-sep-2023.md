@@ -4,6 +4,9 @@ author: "Peter Ralph"
 date: "Computational Biology <br/> Cornell // 15 Sep 2023"
 ---
 
+
+# Outline
+
 <!-- Abstract:
 Modern datasets have made it possible to use genomic data to try to answer
 increasingly detailed and practically relevant questions about evolution and ecology.
@@ -17,9 +20,6 @@ produced the landscapes of genetic diversity in the great apes; and describing c
 coevolution can produce spatial correlations in phenotypes such as seen in the classic
 Taricha newt-Thamnophis garter snake system.
 -->
-
-
-# Outline
 
 ## Outline of the talk
 
@@ -37,6 +37,7 @@ Taricha newt-Thamnophis garter snake system.
 
 2. newts and snakes
 
+3. other things
 
 # Inference, with genomes
 
@@ -436,41 +437,6 @@ and Haller, Galloway, Kelleher, Messer, and R. 2018,
 ::::::
 
 
-
-# Wrap-up
-
-
-## Software development goals
-
-::: {.columns}
-:::::: {.column width=50%}
-
-- open
-- welcoming and supportive
-- reproducible and well-tested
-- backwards compatible
-- well-documented
-- capacity building
-
-::: {.centered}
-![popsim logo](figs/popsim.png){width=50%}
-:::
-
-:::
-:::::: {.column width=50%}
-
-
-::: {.centered}
-![tskit logo](figs/tskit_logo.png){width=60%}
-
-[tskit.dev](https://tskit.dev)
-
-![SLiM logo](figs/slim_logo.png){width=80%}
-:::
-
-:::
-::::::
-
 <!-- Great apes -->
 
 # Landscapes of genetic diversity
@@ -586,6 +552,152 @@ PLoS Bio 2019.
 :::::::::::
 :::::
 
+
+<!-- Snewts -->
+
+# Spatial coevolution: snakes and newts
+
+:::: {.columns}
+:::::::: {.column width=70%}
+
+![Battling newts and snakes](figs/snewts/biowarfare_cartoon.gif)
+
+::::
+:::::::: {.column width=30%}
+::: {.centered}
+
+![Victoria Caudill](figs/victoria.jpg){width=80%}
+
+Victoria Caudill
+
+:::
+::::
+::::::::
+
+::::::::::: {.caption}
+Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-warfare-and-the-coevolutionary-arms-race/coevolution/)
+:::::::::::
+
+---------------
+
+![](figs/snewts/snewt-lit.png)
+
+---------------
+
+![Fig 1 from Reimche et al 2020](figs/snewts/reimche2020-fig1.jpg){width=70%}
+
+::::::::::: {.caption}
+[Fig 1, Reimche et al 2020](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2656.13212)
+:::::::::::
+
+---------------
+
+![Fig 2 from Hanifin et al 2008](figs/snewts/hanifin2008-fig2.png){width=70%}
+
+::::::::::: {.caption}
+[Fig 2, Hanifin et al 2008](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0060060)
+:::::::::::
+
+## Why, and how?
+
+![](figs/snewts/brodie2002abstract.png)
+
+
+## A spatial co-evolutionary simulation
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- two species
+- 
+
+::::
+:::::::: {.column width=50%}
+
+![Screenshot of a SLiM simulation](figs/snewts/slim-screenshot.png)
+
+::::
+::::::::
+------------
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![Map with no correlation](nocorr_map.png)
+
+::::
+:::::::: {.column width=50%}
+
+![Map with no correlation](nocorr_boxplots.png)
+
+::::
+::::::::
+
+
+------------
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![Map with no correlation](nocorr_map.png)
+
+::::
+:::::::: {.column width=50%}
+
+![Map with no correlation](nocorr_boxplots.png)
+
+::::
+::::::::
+
+## Conclusions
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![Map with no correlation](nocorr_map.png)
+
+::::
+:::::::: {.column width=50%}
+
+spatial heterogeneity very plausible
+
+::::
+::::::::
+
+
+# Wrap-up
+
+
+## Software development goals
+
+::: {.columns}
+:::::: {.column width=50%}
+
+- open
+- welcoming and supportive
+- reproducible and well-tested
+- backwards compatible
+- well-documented
+- capacity building
+
+::: {.centered}
+![popsim logo](figs/popsim.png){width=50%}
+:::
+
+:::
+:::::: {.column width=50%}
+
+
+::: {.centered}
+![tskit logo](figs/tskit_logo.png){width=60%}
+
+[tskit.dev](https://tskit.dev)
+
+![SLiM logo](figs/slim_logo.png){width=80%}
+:::
+
+:::
+::::::
 
 
 ## Thanks!
