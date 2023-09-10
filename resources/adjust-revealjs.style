@@ -15,11 +15,11 @@
 /* apply this to the columns div */
 div.vcentered { display: flex; align-items: center; }
 
-.caption p { font-size: 75%; font-style: italic; color: #0006; }
+.caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; }
 
 .greyed { color: #0004; }
 
-div.floatright { float: right; text-align: right; }
+img.floatright, div.floatright { float: right; text-align: right; }
 
 .reveal figcaption { display: none; }
 

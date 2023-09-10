@@ -3,6 +3,7 @@ SHELL := /bin/bash
 
 figs: modeling_figs
 	$(MAKE) -C snewts
+	$(MAKE) -C murillo
 
 modeling_figs: modeling_empty.png \
 			   modeling_reality.png \

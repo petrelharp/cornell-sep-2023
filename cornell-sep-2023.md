@@ -461,6 +461,264 @@ and Haller, Galloway, Kelleher, Messer, and R. 2018,
 ::::
 ::::::::
 
+## Landscapes of genetic diverity within groups of species
+
+![](figs/murillo/correlated-pi-examples.png)
+
+::: {.caption .floatright}
+[Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
+:::
+
+<!-- Divergence landscapes changing over time (from Murillo) -->
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![](figs/murillo/close_divergence_tree.png)
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes_0N.jpg)
+
+::::
+::::::::
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes.gif)
+
+::::
+::::::::
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![](figs/murillo/far_divergence_tree.png)
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes_4N.jpg)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes_0N.jpg)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes.gif)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes_4N.jpg)
+
+::::
+::::::::
+
+<!-- End divergence landscapes changing over time -->
+
+## Goals
+
+- How correlated are landscapes for closely related species?
+- How much is due to shared footprints of
+    * history?
+    * selective forces?
+    * mutational processes?
+
+![](figs/murillo/landscapes_cover.png){width=80%}
+
+
+## The study system
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- High quality genomic data for 5 species
+- Deep divergence, spanning ~60N generations
+- Conservation of genes, recombination rate and other genomic features
+
+::::
+:::::::: {.column width=50%}
+
+![Phylogeny of the great apes from Javier-Prado et al. (2013) Nature](figs/murillo/greatapes.png)
+
+:::{.caption .flushright}
+[Javier-Prado et al. (2013)](https://www.nature.com/articles/nature12228)
+:::
+
+::::
+::::::::
+
+##
+
+![](figs/murillo/greatapes_pi.png)
+
+##
+
+![](figs/murillo/greatapes_dxy.png)
+
+##
+
+![](figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png)
+
+![](figs/murillo/trees-with-dt.png)
+
+## The data: empirical correlations for chromosome 12 in the great apes
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+
+## SLiMulations
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- Chromosome-scale simulation (chr12)
+- selection on annotated exons (from Ensembl via [stdpopsim](https://popsim-consortium.github.io/stdpopsim-docs/main/catalog.html#sec_catalog_HomSap_annotations))
+- branches simulated independently with SLiM and merged [tskit](https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html)
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/demog_tubes_greatapes.png)
+
+::::
+::::::::
+
+-----------------
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+::::
+::::::::
+
+
+# Landscapes are not correlated with neutral simulation
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+- correlations decay quickly with split time
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/corr-pidxy-land-panel_neutral.png)
+
+::::
+::::::::
+
+-----------------
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+::::
+::::::::
+
+
+## Mutation rate variation can contribute
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+- but correlations do not decay with time
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_selected-mutvar-sims_1.png)
+
+::::
+::::::::
+
+
+
+## Negative selection produces weak correlations
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+::::
+::::::::
+
+![](figs/murillo/cor-pidxy-dT_selected-negative.png)
+
+
+
 ## The *Mimulus aurantiacus* species complex
 
 ::: {.centered}
@@ -600,7 +858,7 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 
 ## Why, and how?
 
-![](figs/snewts/brodie2002abstract.png)
+![](figs/snewts/brodie2002abstract.png){width=100%}
 
 
 ## A spatial co-evolutionary simulation
@@ -608,8 +866,15 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 :::: {.columns}
 :::::::: {.column width=50%}
 
-- two species
-- 
+- continuous space
+- local density-dependent mortality
+- additive traits ("toxicity" and "resistance")
+- various genetic architectures
+- snakes may encounter nearby newts,
+    outcome depends on difference in traits:
+
+    * snake eats newt, gets fitness benefit, or
+    * snake dies, newt escapes
 
 ::::
 :::::::: {.column width=50%}
@@ -623,28 +888,31 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 :::: {.columns}
 :::::::: {.column width=50%}
 
-![Map with no correlation](nocorr_map.png)
+![](figs/snewts/nocor_map.png)
 
 ::::
 :::::::: {.column width=50%}
 
-![Map with no correlation](nocorr_boxplots.png)
+![](figs/snewts/nocor_boxplots.png)
 
 ::::
 ::::::::
 
+## Add some heterogeneity
+
+![](figs/snewts/gradient-maps.png)
 
 ------------
 
 :::: {.columns}
 :::::::: {.column width=50%}
 
-![Map with no correlation](nocorr_map.png)
+![](figs/snewts/cor_map.png)
 
 ::::
 :::::::: {.column width=50%}
 
-![Map with no correlation](nocorr_boxplots.png)
+![](figs/snewts/cor_boxplots.png)
 
 ::::
 ::::::::
@@ -654,12 +922,26 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 :::: {.columns}
 :::::::: {.column width=50%}
 
-![Map with no correlation](nocorr_map.png)
+![Fig 2 from Hanifin et al 2008](figs/snewts/hanifin2008-fig2.png)
 
 ::::
 :::::::: {.column width=50%}
 
-spatial heterogeneity very plausible
+- such large correlated differences across the landscape
+    unlikely to be due to nonadaptive forces
+
+- spatial heterogeneity in ecological factors
+    much more plausible
+
+- trait genetic architecture has little effect,
+    given sufficient variation
+
+
+::: {.caption .floatright}
+![Victoria Caudill](figs/victoria.jpg){width=20% .floatright}
+
+Victoria Caudill
+:::
 
 ::::
 ::::::::
