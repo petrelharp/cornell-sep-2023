@@ -20,6 +20,11 @@ div.vcentered { display: flex; align-items: center; }
 .greyed { color: #0004; }
 
 img.floatright, div.floatright { float: right; text-align: right; }
+img.floatleft, div.floatleft { float: left; text-align: left; }
+
+img.centered { margin-left: auto; margin-right: auto; display: block; }
+
+.invisible { opacity: 0; }
 
 .reveal figcaption { display: none; }
 

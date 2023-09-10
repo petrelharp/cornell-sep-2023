@@ -14,7 +14,8 @@ figs: correlated-pi-examples.png \
 		corr-pidxy-land-panel_neutral.png \
 		cor-pidxy-dT_selected-mutvar-sims_1.png \
 		cor-pidxy-dT_selected-negative.png \
-		cor-pidxy-dT_selected-positive.png
+		cor-pidxy-dT_selected-positive.png \
+		cor-pidxy-dT_selected-both.png
 
 
 include ../../rules.mk

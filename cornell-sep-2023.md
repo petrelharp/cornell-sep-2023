@@ -436,381 +436,6 @@ and Haller, Galloway, Kelleher, Messer, and R. 2018,
 :::
 ::::::
 
-
-<!-- Great apes -->
-
-# Landscapes of genetic diversity
-
-![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
-
-
-## Diversity correlates with recombination rate
-
-:::: {.columns}
-:::::::: {.column width=80%}
-
-
-![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=85%}
-
-::::
-:::::::: {.column width=20%}
-
-
-*Hudson 1994; Cutter & Payseur 2013; Corbett-Detig et al 2015*
-
-::::
-::::::::
-
-## Landscapes of genetic diverity within groups of species
-
-![](figs/murillo/correlated-pi-examples.png)
-
-::: {.caption .floatright}
-[Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
-:::
-
-<!-- Divergence landscapes changing over time (from Murillo) -->
-
-## How diversity landscapes change
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-![](figs/murillo/close_divergence_tree.png)
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_neutral_div_landscapes_0N.jpg)
-
-::::
-::::::::
-
-## How diversity landscapes change
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_neutral_div_landscapes.gif)
-
-::::
-::::::::
-
-## How diversity landscapes change
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-![](figs/murillo/far_divergence_tree.png)
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_neutral_div_landscapes_4N.jpg)
-
-::::
-::::::::
-
-## How can landscapes remain correlated?
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- shared ancestral variation
-- shared processes:
-    * positive, negative selection
-    * mutation rate variation
-    * GC-biased gene conversion
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_sel_div_landscapes_0N.jpg)
-
-::::
-::::::::
-
-## How can landscapes remain correlated?
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- shared ancestral variation
-- shared processes:
-    * positive, negative selection
-    * mutation rate variation
-    * GC-biased gene conversion
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_sel_div_landscapes.gif)
-
-::::
-::::::::
-
-## How can landscapes remain correlated?
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- shared ancestral variation
-- shared processes:
-    * positive, negative selection
-    * mutation rate variation
-    * GC-biased gene conversion
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/two_spp_sel_div_landscapes_4N.jpg)
-
-::::
-::::::::
-
-<!-- End divergence landscapes changing over time -->
-
-## Goals
-
-- How correlated are landscapes for closely related species?
-- How much is due to shared footprints of
-    * history?
-    * selective forces?
-    * mutational processes?
-
-![](figs/murillo/landscapes_cover.png){width=80%}
-
-
-## The study system
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- High quality genomic data for 5 species
-- Deep divergence, spanning ~60N generations
-- Conservation of genes, recombination rate and other genomic features
-
-::::
-:::::::: {.column width=50%}
-
-![Phylogeny of the great apes from Javier-Prado et al. (2013) Nature](figs/murillo/greatapes.png)
-
-:::{.caption .flushright}
-[Javier-Prado et al. (2013)](https://www.nature.com/articles/nature12228)
-:::
-
-::::
-::::::::
-
-##
-
-![](figs/murillo/greatapes_pi.png)
-
-##
-
-![](figs/murillo/greatapes_dxy.png)
-
-##
-
-![](figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png)
-
-![](figs/murillo/trees-with-dt.png)
-
-## The data: empirical correlations for chromosome 12 in the great apes
-
-![](figs/murillo/cor-pidxy-dT_data.png)
-
-
-## SLiMulations
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- Chromosome-scale simulation (chr12)
-- selection on annotated exons (from Ensembl via [stdpopsim](https://popsim-consortium.github.io/stdpopsim-docs/main/catalog.html#sec_catalog_HomSap_annotations))
-- branches simulated independently with SLiM and merged [tskit](https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html)
-
-::::
-:::::::: {.column width=50%}
-
-![](figs/murillo/demog_tubes_greatapes.png)
-
-::::
-::::::::
-
------------------
-
-:::: {.columns}
-:::::::: {.column width=30%}
-
-::::
-:::::::: {.column width=70%}
-
-![](figs/murillo/cor-pidxy-dT_data.png)
-
-::::
-::::::::
-
-
-# Landscapes are not correlated with neutral simulation
-
-:::: {.columns}
-:::::::: {.column width=30%}
-
-- correlations decay quickly with split time
-
-::::
-:::::::: {.column width=70%}
-
-![](figs/murillo/corr-pidxy-land-panel_neutral.png)
-
-::::
-::::::::
-
------------------
-
-:::: {.columns}
-:::::::: {.column width=30%}
-
-::::
-:::::::: {.column width=70%}
-
-![](figs/murillo/cor-pidxy-dT_data.png)
-
-::::
-::::::::
-
-
-## Mutation rate variation can contribute
-
-:::: {.columns}
-:::::::: {.column width=30%}
-
-- but correlations do not decay with time
-
-::::
-:::::::: {.column width=70%}
-
-![](figs/murillo/cor-pidxy-dT_selected-mutvar-sims_1.png)
-
-::::
-::::::::
-
-
-
-## Negative selection produces weak correlations
-
-:::: {.columns}
-:::::::: {.column width=30%}
-
-::::
-:::::::: {.column width=70%}
-
-![](figs/murillo/cor-pidxy-dT_data.png)
-
-::::
-::::::::
-
-![](figs/murillo/cor-pidxy-dT_selected-negative.png)
-
-
-
-## The *Mimulus aurantiacus* species complex
-
-::: {.centered}
-![](figs/aurantiacus/phylogeny.png)
-:::
-
----------------------
-
-:::: {.columns}
-:::::::: {.column width=80%}
-
-![](figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png)
-
-::::
-:::::::: {.column width=20%}
-
-![](figs/aurantiacus/labeled_phylogeny_aura.png){width="250%"}
-
-::::
-::::::::
-
-
-## Simulations
-
-::: {.columns}
-::::::: {.column width="70%"}
-
-- $N=10,000$ diploids
-- burn-in for $10N$ generations
-- population split, with either:
-    
-    * neutral
-    * background selection
-    * selection against introgressed alleles
-    * positive selection
-    * local adaptation
-
-:::
-::::::: {.column width="30%"}
-
-:::: {.flushright}
-![](figs/murillo.jpeg)
-
-::::: {.caption}
-Murillo Rodrigues
-:::::
-::::
-
-:::
-:::::::
-
-
-------------------
-
-<!--
-Fig 7. Genomic landscapes simulated under different divergence histories.
-Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
-
-![](figs/aurantiacus/sim_results.png)
--->
-
-![](figs/sim_mimulus_landscapes.svg){width=100%}
-
-::::: {.flushright}
-
-::::::::::: {.caption}
-From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
-Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
-PLoS Bio 2019.
-:::::::::::
-:::::
-
-------------
-
-Conclusions:
-
-* <strike>neutral</strike>
-* <strike>background selection</strike>
-* <strike>selection against introgressed alleles</strike>
-* positive selection
-* local adaptation
-
-::::: {.flushright}
-
-::::::::::: {.caption}
-From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
-Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
-PLoS Bio 2019.
-:::::::::::
-:::::
-
-
 <!-- Snewts -->
 
 # Spatial coevolution: snakes and newts
@@ -947,6 +572,328 @@ Victoria Caudill
 ::::::::
 
 
+
+<!-- Great apes -->
+
+# Landscapes of genetic diversity
+
+[![https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2](figs/murillo/bioRxiv.png){width=70% .floatleft}](https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2)
+
+::: {.caption .floatright}
+![](figs/murillo.jpeg){width=80%}
+
+[Murillo Rodrigues](https://www.m-rodrigues.me/)
+:::
+
+----------------------
+
+![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
+
+
+## Diversity correlates with recombination rate
+
+:::: {.columns}
+:::::::: {.column width=80%}
+
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=85%}
+
+::::
+:::::::: {.column width=20%}
+
+
+*Hudson 1994; Cutter & Payseur 2013; Corbett-Detig et al 2015*
+
+::::
+::::::::
+
+## Landscapes of genetic diverity within groups of species
+
+![](figs/murillo/correlated-pi-examples.png)
+
+::: {.caption .floatright}
+[Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
+:::
+
+<!-- Divergence landscapes changing over time (from Murillo) -->
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![](figs/murillo/close_divergence_tree.png)
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes_0N.jpg)
+
+::::
+::::::::
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes.gif)
+
+::::
+::::::::
+
+## How diversity landscapes change
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+![](figs/murillo/far_divergence_tree.png)
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_neutral_div_landscapes_4N.jpg)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes_0N.jpg)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes.gif)
+
+::::
+::::::::
+
+## How can landscapes remain correlated?
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- shared ancestral variation
+- shared processes:
+    * positive, negative selection
+    * mutation rate variation
+    * GC-biased gene conversion
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/two_spp_sel_div_landscapes_4N.jpg)
+
+::::
+::::::::
+
+<!-- End divergence landscapes changing over time -->
+
+## Goals {data-background-image="figs/murillo/landscapes_cover.png" data-background-position="bottom" data-background-size=60%}
+
+- How correlated are landscapes for closely related species?
+- How much is due to shared footprints of
+    * history?
+    * selective forces?
+    * mutational processes?
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.invisible height=80%}
+
+## The study system
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- High quality genomic data for 5 species
+- Deep divergence, spanning ~60N generations
+- Conservation of genes, recombination rate and other genomic features
+
+::::
+:::::::: {.column width=50%}
+
+![Phylogeny of the great apes from Javier-Prado et al. (2013) Nature](figs/murillo/greatapes.png)
+
+:::{.caption .flushright}
+[Javier-Prado et al. (2013)](https://www.nature.com/articles/nature12228)
+:::
+
+::::
+::::::::
+
+##
+
+![](figs/murillo/greatapes_pi.png)
+
+##
+
+![](figs/murillo/greatapes_dxy.png)
+
+##
+
+![](figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png)
+
+![](figs/murillo/trees-with-dt.png)
+
+## The data: empirical correlations for chromosome 12 in the great apes
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+
+## SLiMulations
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- Chromosome-scale simulation (chr12)
+- selection on annotated exons (from Ensembl via [stdpopsim](https://popsim-consortium.github.io/stdpopsim-docs/main/catalog.html#sec_catalog_HomSap_annotations))
+- branches simulated independently with SLiM and merged [tskit](https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html)
+- runtime: days to weeks
+
+::::
+:::::::: {.column width=50%}
+
+![](figs/murillo/demog_tubes_greatapes.png)
+
+::::
+::::::::
+
+## The data: chromosome 12
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_data.png)
+
+::::
+::::::::
+
+
+## No correlation under neutrality {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+- correlations decay quickly with split time
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/corr-pidxy-land-panel_neutral.png)
+
+::::
+::::::::
+
+
+
+## Mutation rate variation can contribute {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+- but correlations do not decay with time
+
+::::
+:::::::: {.column width=70%}
+
+![](figs/murillo/cor-pidxy-dT_selected-mutvar-sims_1.png){width=80% .centered}
+
+::::
+::::::::
+
+
+
+## Negative selection produces weak correlations {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+
+![](figs/murillo/cor-pidxy-dT_selected-negative.png)
+
+
+## Positive selection produces strong correlations {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+$$ \vphantom{ d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
+
+::::
+::::::::
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.centered}
+
+
+## Positive selection produces strong correlations {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+$$ { d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
+
+::::
+::::::::
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.centered}
+
+
+## The best fit: both! {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+- deleterious mutations: $1.2 \times 10^{-8}$
+- beneficial mutations: $10^{-12}$
+- choice 
+
+![](figs/murillo/cor-pidxy-dT_selected-both.png){width=60% .centered}
+
+## Conclusions {data-background-image="figs/murillo/landscapes_cover.png" data-background-position="bottom" data-background-size=60%}
+
+- best fit chosen from 37 distinct simulations
+- GC-biased gene conversion causes "smile" at ends of chromosomes
+- positive selection necessary for a good fit
+- best guess: $\approx 10\%$ of fixations on human lineage
+    due to positive selection
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.invisible height=80%}
+
+
+
 # Wrap-up
 
 
@@ -989,28 +936,29 @@ Victoria Caudill
 
 
 - Andy Kern
-- Matt Lukac
-- Murillo Rodrigues 
 - Victoria Caudill
-- Nate Pope
+- Murillo Rodrigues 
 - Gilia Patterson
+- Nate Pope
 - Anastasia Teterina
+- Matt Lukac
+- Chris Smith
+- Clara Rehmann
+- Jiseon Min
 <!--
 - Saurabh Belsare
 - Chris Smith
 - Gabby Coffing
 - Jeff Adrion
--->
 - CJ Battey
 - Jared Galloway
-- the rest of the Co-Lab
+-->
+- the rest of [the Co-Lab](https://kr-colab.github.io/people)
 
 Funding:
 
 - NIH NIGMS
 - NSF DBI
-- Sloan foundation
-- UO Data Science
 
 ::::
 :::::::: {.column width=50%}
@@ -1022,22 +970,27 @@ Funding:
 - Ben Haller
 - Ben Jeffery
 - Yan Wong
+- Elsie Chevy
+<!--
 - Georgia Tsambos
 - Jaime Ashander
-- Gideon Bradburd
+- Jared Galloway
 - Madeline Chase
+- Gideon Bradburd
 - Bill Cresko
 - Alison Etheridge
 - Evan McCartney-Melstad
 - Brad Shaffer
 - Sean Stankowski
 - Matt Streisfeld
+-->
 
 </div>
 
 ::: {.floatright}
 ![tskit logo](figs/tskit_logo.png){width=40%}
 ![SLiM logo](figs/slim_logo.png){width=40%}
+![](figs/colab.png){width=70%}
 :::
 
 ::::
@@ -1046,3 +999,96 @@ Funding:
 
 
 ## {data-background-image="figs/guillemots_thanks.png" data-background-position=center data-background-size=50%}
+
+
+# The *Mimulus aurantiacus* species complex
+
+::: {.centered}
+![](figs/aurantiacus/phylogeny.png)
+:::
+
+---------------------
+
+:::: {.columns}
+:::::::: {.column width=80%}
+
+![](figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png)
+
+::::
+:::::::: {.column width=20%}
+
+![](figs/aurantiacus/labeled_phylogeny_aura.png){width="250%"}
+
+::::
+::::::::
+
+
+## Simulations
+
+::: {.columns}
+::::::: {.column width="70%"}
+
+- $N=10,000$ diploids
+- burn-in for $10N$ generations
+- population split, with either:
+    
+    * neutral
+    * background selection
+    * selection against introgressed alleles
+    * positive selection
+    * local adaptation
+
+:::
+::::::: {.column width="30%"}
+
+:::: {.flushright}
+![](figs/murillo.jpeg)
+
+::::: {.caption}
+Murillo Rodrigues
+:::::
+::::
+
+:::
+:::::::
+
+
+------------------
+
+<!--
+Fig 7. Genomic landscapes simulated under different divergence histories.
+Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
+
+![](figs/aurantiacus/sim_results.png)
+-->
+
+![](figs/sim_mimulus_landscapes.svg){width=100%}
+
+::::: {.flushright}
+
+::::::::::: {.caption}
+From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
+Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
+PLoS Bio 2019.
+:::::::::::
+:::::
+
+------------
+
+Conclusions:
+
+* <strike>neutral</strike>
+* <strike>background selection</strike>
+* <strike>selection against introgressed alleles</strike>
+* positive selection
+* local adaptation
+
+::::: {.flushright}
+
+::::::::::: {.caption}
+From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
+Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
+PLoS Bio 2019.
+:::::::::::
+:::::
+
