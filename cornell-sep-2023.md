@@ -24,20 +24,14 @@ Taricha newt-Thamnophis garter snake system.
 ## Outline of the talk
 
 1. Tree sequences, and simulations
-2. Landscapes of genetic diversity
-3. Spatial landscapes of coevolving traits
+
+2. Spatial landscapes of coevolving traits
+
+3. Landscapes of genetic diversity
 
 
 *slides:* [github.com/petrelharp/cornell-sep-2023](https://petrelharp.github.io/cornell-sep-2023/cornell-sep-2023.slides.html)
 
-
-## Motivating questions
-
-1. genetic diversity
-
-2. newts and snakes
-
-3. other things
 
 # Inference, with genomes
 
@@ -493,7 +487,7 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 
 - continuous space
 - local density-dependent mortality
-- additive traits ("toxicity" and "resistance")
+- additive, costly traits ("toxicity" and "resistance")
 - various genetic architectures
 - snakes may encounter nearby newts,
     outcome depends on difference in traits:
@@ -508,7 +502,8 @@ Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-wa
 
 ::::
 ::::::::
-------------
+
+## No spatial correlation on a flat map
 
 :::: {.columns}
 :::::::: {.column width=50%}
@@ -607,9 +602,16 @@ Victoria Caudill
 ::::
 ::::::::
 
+----------------
+
+Selection!
+
+But: what kind? and, how much?
+
+
 ## Landscapes of genetic diverity within groups of species
 
-![](figs/murillo/correlated-pi-examples.png)
+![](figs/murillo/correlated-pi-examples.png){width=80%}
 
 ::: {.caption .floatright}
 [Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
@@ -661,7 +663,7 @@ Victoria Caudill
 ::::
 ::::::::
 
-## How can landscapes remain correlated?
+## How can landscapes be correlated?
 
 :::: {.columns}
 :::::::: {.column width=50%}
@@ -680,7 +682,7 @@ Victoria Caudill
 ::::
 ::::::::
 
-## How can landscapes remain correlated?
+## How can landscapes be correlated?
 
 :::: {.columns}
 :::::::: {.column width=50%}
@@ -699,7 +701,7 @@ Victoria Caudill
 ::::
 ::::::::
 
-## How can landscapes remain correlated?
+## How can landscapes be correlated?
 
 :::: {.columns}
 :::::::: {.column width=50%}
@@ -896,6 +898,11 @@ $$ { d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
 
 # Wrap-up
 
+## Other applications
+
+- inference of recombination rate maps (ReLearNN)
+- inference of mean dispersal distance (disperseNN)
+- history of *Nebria* beetles 
 
 ## Software development goals
 
