@@ -151,8 +151,8 @@ by Ben Haller and Philipp Messer
 an individual-based, scriptable forwards simulator
 
 :::: {.caption}
-![Ben Haller](figs/ben-haller.jpg)
-*Ben Haller*
+![Ben Haller](figs/ben-haller.jpg){width=45%}
+![Philipp Messer](figs/philipp.jpg){width=45%}
 ::::
 
 :::
@@ -455,9 +455,14 @@ Victoria Caudill
 Image from [evolution.berkeley.edu](https://evolution.berkeley.edu/biological-warfare-and-the-coevolutionary-arms-race/coevolution/)
 :::::::::::
 
----------------
+## {data-background-image="figs/snewts/snewt-lit.png" data-background-position="top" data-background-width=60%}
 
-![](figs/snewts/snewt-lit.png)
+::: {.caption .bottomright .smallish}
+newt: [CC by Steve Jurvetson](https://en.m.wikipedia.org/wiki/File:California_Newt_%28Taricha_torosa%29_%284415749606%29.jpg)
+
+snake: [CC by Jaden Clark](https://commons.wikimedia.org/wiki/File:California_Red-Sided_Garter_Snake_\(Thamnophis_sirtalis_infernalis\).jpg)
+:::
+
 
 ---------------
 
@@ -580,6 +585,53 @@ Victoria Caudill
 [Murillo Rodrigues](https://www.m-rodrigues.me/)
 :::
 
+## Landscapes of genetic diversity within groups of species
+
+![](figs/murillo/correlated-pi-examples.png){width=80%}
+
+::: {.caption .floatright}
+[Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
+:::
+
+## The study system
+
+:::: {.columns}
+:::::::: {.column width=50%}
+
+- High quality genomic data for 5 species
+- Deep divergence, spanning ~60N generations
+- Conservation of genes, recombination rate and other genomic features
+
+::::
+:::::::: {.column width=50%}
+
+![Phylogeny of the great apes from Javier-Prado et al. (2013) Nature](figs/murillo/greatapes.png)
+
+:::{.caption .flushright}
+[Javier-Prado et al. (2013)](https://www.nature.com/articles/nature12228)
+:::
+
+::::
+::::::::
+
+## Genetic diversity in the great apes: chromosome 12
+
+![](figs/murillo/greatapes_pi.png)
+
+## Genetic divergence between the great apes: chromosome 12
+
+![](figs/murillo/greatapes_dxy.png)
+
+## Goals {data-background-image="figs/murillo/landscapes_cover.png" data-background-position="bottom" data-background-size=60%}
+
+- How correlated are landscapes for closely related species?
+- How much is due to shared footprints of
+    * history?
+    * selective forces?
+    * mutational processes?
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.invisible height=80%}
+
 ----------------------
 
 ![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
@@ -604,18 +656,34 @@ Victoria Caudill
 
 ----------------
 
-Selection!
+## A quick primer
 
-But: what kind? and, how much?
+> - Genetic diversity ($\pi$) and divergence ($d_{XY}$) are
+>     *time since common ancestor*
+>     multiplied by *effective mutation rate*:
+>     $$ \pi, d_{XY} = T_\text{MRCA} \times \mu_\text{effective} . $$
+> - Higher mutation rate $\Rightarrow$ higher $\pi$
+>     and faster increase of $d_{XY}$.
+> - Positive selection *increases* fixation rate of new mutations
+>     $\Rightarrow$ $d_{XY}$ goes up faster,
+> - ... but, it *decreases* $\pi$ nearby.
+> - More generally, selection tends to *decrease* $\pi$,
+>     over a distance determined by recombination rate.
 
+--------------
 
-## Landscapes of genetic diverity within groups of species
+linked selection
 
-![](figs/murillo/correlated-pi-examples.png){width=80%}
+: The indirect effects of selection on genomic locations
+  that are *linked* to the sites under selection by a lack of recombination.
 
-::: {.caption .floatright}
-[Stankowski, Chase et al. (2019)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391); [Van Doren et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/mec.14083); [Buri (2017)](https://academic.oup.com/evlett/article/1/3/118/6697077)
+::: {.centered}
+
+![](figs/sweep_haps.png){.fragment width="40%"}
+![](figs/background_haps.png){.fragment width="40%"}
+
 :::
+
 
 <!-- Divergence landscapes changing over time (from Murillo) -->
 
@@ -722,42 +790,11 @@ But: what kind? and, how much?
 
 <!-- End divergence landscapes changing over time -->
 
-## Goals {data-background-image="figs/murillo/landscapes_cover.png" data-background-position="bottom" data-background-size=60%}
-
-- How correlated are landscapes for closely related species?
-- How much is due to shared footprints of
-    * history?
-    * selective forces?
-    * mutational processes?
-
-![](figs/murillo/cor-pidxy-dT_selected-positive.png){.invisible height=80%}
-
-## The study system
-
-:::: {.columns}
-:::::::: {.column width=50%}
-
-- High quality genomic data for 5 species
-- Deep divergence, spanning ~60N generations
-- Conservation of genes, recombination rate and other genomic features
-
-::::
-:::::::: {.column width=50%}
-
-![Phylogeny of the great apes from Javier-Prado et al. (2013) Nature](figs/murillo/greatapes.png)
-
-:::{.caption .flushright}
-[Javier-Prado et al. (2013)](https://www.nature.com/articles/nature12228)
-:::
-
-::::
-::::::::
-
-##
+## Genetic diversity in the great apes: chromosome 12
 
 ![](figs/murillo/greatapes_pi.png)
 
-##
+## Genetic divergence between the great apes: chromosome 12
 
 ![](figs/murillo/greatapes_dxy.png)
 
@@ -900,9 +937,13 @@ $$ { d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
 
 ## Other applications
 
-- inference of recombination rate maps (ReLearNN)
-- inference of mean dispersal distance (disperseNN)
-- history of *Nebria* beetles 
+- inference of recombination rate maps (Jeff Adrion; ReLERNN)
+- inference of mean dispersal distance (Chris Smith; disperseNN)
+- history of *Nebria* beetles (Gilia Patterson, Sean Schoville, Yi-Ming Weng)
+
+- inference of maps of population density
+- and individual movement
+- identification of regions under selection
 
 ## Software development goals
 
@@ -917,8 +958,10 @@ $$ { d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
 - capacity building
 
 ::: {.centered}
-![popsim logo](figs/popsim.png){width=50%}
+![popsim logo](figs/popsim.png){width=35%}
 :::
+
+[PopSim Consortium](https://popsim-consortium.github.io/stdpopsim-docs/stable/index.html)
 
 :::
 :::::: {.column width=50%}
@@ -978,18 +1021,18 @@ Funding:
 - Ben Jeffery
 - Yan Wong
 - Elsie Chevy
+- Madeline Chase
+- Sean Stankowski
+- Matt Streisfeld
 <!--
 - Georgia Tsambos
 - Jaime Ashander
 - Jared Galloway
-- Madeline Chase
 - Gideon Bradburd
 - Bill Cresko
 - Alison Etheridge
 - Evan McCartney-Melstad
 - Brad Shaffer
-- Sean Stankowski
-- Matt Streisfeld
 -->
 
 </div>

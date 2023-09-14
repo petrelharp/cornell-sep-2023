@@ -39,6 +39,8 @@
   /* apply this to the columns div */
   div.vcentered { display: flex; align-items: center; }
 
+  div.bottomright { position: fixed; bottom: 0; right: 0; }
+
   .caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; }
 
   .greyed { color: #0004; }
@@ -220,8 +222,9 @@ from millions of individuals.</p>
 <p>by Ben Haller and Philipp Messer</p>
 <p>an individual-based, scriptable forwards simulator</p>
 <div class="caption">
-<p><img data-src="figs/ben-haller.jpg" alt="Ben Haller" /> <em>Ben
-Haller</em></p>
+<p><img data-src="figs/ben-haller.jpg" style="width:45.0%"
+alt="Ben Haller" /> <img data-src="figs/philipp.jpg" style="width:45.0%"
+alt="Philipp Messer" /></p>
 </div>
 </div><div class="column" style="width:50%;">
 <figure>
@@ -524,9 +527,19 @@ alt="Victoria Caudill" />
 href="https://evolution.berkeley.edu/biological-warfare-and-the-coevolutionary-arms-race/coevolution/">evolution.berkeley.edu</a></p>
 </div>
 </section>
-<section class="slide level2">
-
-<p><img data-src="figs/snewts/snewt-lit.png" /></p>
+<section id="section-7" class="slide level2"
+data-background-image="figs/snewts/snewt-lit.png"
+data-background-position="top" data-background-width="60%">
+<h2 data-background-image="figs/snewts/snewt-lit.png"
+data-background-position="top" data-background-width="60%"></h2>
+<div class="caption bottomright smallish">
+<p>newt: <a
+href="https://en.m.wikipedia.org/wiki/File:California_Newt_%28Taricha_torosa%29_%284415749606%29.jpg">CC
+by Steve Jurvetson</a></p>
+<p>snake: <a
+href="https://commons.wikimedia.org/wiki/File:California_Red-Sided_Garter_Snake_(Thamnophis_sirtalis_infernalis).jpg">CC
+by Jaden Clark</a></p>
+</div>
 </section>
 <section class="slide level2">
 
@@ -656,6 +669,72 @@ alt="https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2" /></a></p>
 <p><a href="https://www.m-rodrigues.me/">Murillo Rodrigues</a></p>
 </div>
 </section>
+<section id="landscapes-of-genetic-diversity-within-groups-of-species"
+class="slide level2">
+<h2>Landscapes of genetic diversity within groups of species</h2>
+<p><img data-src="figs/murillo/correlated-pi-examples.png"
+style="width:80.0%" /></p>
+<div class="caption floatright">
+<p><a
+href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391">Stankowski,
+Chase et al. (2019)</a>; <a
+href="https://onlinelibrary.wiley.com/doi/10.1111/mec.14083">Van Doren
+et al. (2017)</a>; <a
+href="https://academic.oup.com/evlett/article/1/3/118/6697077">Buri
+(2017)</a></p>
+</div>
+</section>
+<section id="the-study-system" class="slide level2">
+<h2>The study system</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>High quality genomic data for 5 species</li>
+<li>Deep divergence, spanning ~60N generations</li>
+<li>Conservation of genes, recombination rate and other genomic
+features</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<figure>
+<img data-src="figs/murillo/greatapes.png"
+alt="Phylogeny of the great apes from Javier-Prado et al. (2013) Nature" />
+<figcaption aria-hidden="true">Phylogeny of the great apes from
+Javier-Prado et al. (2013) Nature</figcaption>
+</figure>
+<div class="caption flushright">
+<p><a href="https://www.nature.com/articles/nature12228">Javier-Prado et
+al. (2013)</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="genetic-diversity-in-the-great-apes-chromosome-12"
+class="slide level2">
+<h2>Genetic diversity in the great apes: chromosome 12</h2>
+<p><img data-src="figs/murillo/greatapes_pi.png" /></p>
+</section>
+<section id="genetic-divergence-between-the-great-apes-chromosome-12"
+class="slide level2">
+<h2>Genetic divergence between the great apes: chromosome 12</h2>
+<p><img data-src="figs/murillo/greatapes_dxy.png" /></p>
+</section>
+<section id="goals" class="slide level2"
+data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom" data-background-size="60%">
+<h2 data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom" data-background-size="60%">Goals</h2>
+<ul>
+<li>How correlated are landscapes for closely related species?</li>
+<li>How much is due to shared footprints of
+<ul>
+<li>history?</li>
+<li>selective forces?</li>
+<li>mutational processes?</li>
+</ul></li>
+</ul>
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
+class="invisible" style="height:80.0%" /></p>
+</section>
 <section class="slide level2">
 
 <figure>
@@ -682,24 +761,43 @@ style="width:85.0%" alt="Corbett-Detig et al" />
 </div>
 </div>
 </section>
+<section id="a-quick-primer" class="slide level2">
+<h2>A quick primer</h2>
+<ul>
+<li class="fragment">Genetic diversity (<span
+class="math inline">\(\pi\)</span>) and divergence (<span
+class="math inline">\(d_{XY}\)</span>) are <em>time since common
+ancestor</em> multiplied by <em>effective mutation rate</em>: <span
+class="math display">\[ \pi, d_{XY} = T_\text{MRCA} \times
+\mu_\text{effective} . \]</span></li>
+<li class="fragment">Higher mutation rate <span
+class="math inline">\(\Rightarrow\)</span> higher <span
+class="math inline">\(\pi\)</span> and faster increase of <span
+class="math inline">\(d_{XY}\)</span>.</li>
+<li class="fragment">Positive selection <em>increases</em> fixation rate
+of new mutations <span class="math inline">\(\Rightarrow\)</span> <span
+class="math inline">\(d_{XY}\)</span> goes up faster,</li>
+<li class="fragment">… but, it <em>decreases</em> <span
+class="math inline">\(\pi\)</span> nearby.</li>
+<li class="fragment">More generally, selection tends to
+<em>decrease</em> <span class="math inline">\(\pi\)</span>, over a
+distance determined by recombination rate.</li>
+</ul>
+</section>
 <section class="slide level2">
 
-<p>Selection!</p>
-<p>But: what kind? and, how much?</p>
-</section>
-<section id="landscapes-of-genetic-diverity-within-groups-of-species"
-class="slide level2">
-<h2>Landscapes of genetic diverity within groups of species</h2>
-<p><img data-src="figs/murillo/correlated-pi-examples.png"
-style="width:80.0%" /></p>
-<div class="caption floatright">
-<p><a
-href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391">Stankowski,
-Chase et al. (2019)</a>; <a
-href="https://onlinelibrary.wiley.com/doi/10.1111/mec.14083">Van Doren
-et al. (2017)</a>; <a
-href="https://academic.oup.com/evlett/article/1/3/118/6697077">Buri
-(2017)</a></p>
+<dl>
+<dt>linked selection</dt>
+<dd>
+<p>The indirect effects of selection on genomic locations that are
+<em>linked</em> to the sites under selection by a lack of
+recombination.</p>
+</dd>
+</dl>
+<div class="centered">
+<p><img data-src="figs/sweep_haps.png" class="fragment"
+style="width:40.0%" /> <img data-src="figs/background_haps.png"
+class="fragment" style="width:40.0%" /></p>
 </div>
 <!-- Divergence landscapes changing over time (from Murillo) -->
 </section>
@@ -791,56 +889,17 @@ data-src="figs/murillo/two_spp_neutral_div_landscapes_4N.jpg" /></p>
 </div>
 <!-- End divergence landscapes changing over time -->
 </section>
-<section id="goals" class="slide level2"
-data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom" data-background-size="60%">
-<h2 data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom" data-background-size="60%">Goals</h2>
-<ul>
-<li>How correlated are landscapes for closely related species?</li>
-<li>How much is due to shared footprints of
-<ul>
-<li>history?</li>
-<li>selective forces?</li>
-<li>mutational processes?</li>
-</ul></li>
-</ul>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
-class="invisible" style="height:80.0%" /></p>
-</section>
-<section id="the-study-system" class="slide level2">
-<h2>The study system</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>High quality genomic data for 5 species</li>
-<li>Deep divergence, spanning ~60N generations</li>
-<li>Conservation of genes, recombination rate and other genomic
-features</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<figure>
-<img data-src="figs/murillo/greatapes.png"
-alt="Phylogeny of the great apes from Javier-Prado et al. (2013) Nature" />
-<figcaption aria-hidden="true">Phylogeny of the great apes from
-Javier-Prado et al. (2013) Nature</figcaption>
-</figure>
-<div class="caption flushright">
-<p><a href="https://www.nature.com/articles/nature12228">Javier-Prado et
-al. (2013)</a></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-7" class="slide level2">
-<h2></h2>
+<section id="genetic-diversity-in-the-great-apes-chromosome-12-1"
+class="slide level2">
+<h2>Genetic diversity in the great apes: chromosome 12</h2>
 <p><img data-src="figs/murillo/greatapes_pi.png" /></p>
 </section>
-<section id="section-8" class="slide level2">
-<h2></h2>
+<section id="genetic-divergence-between-the-great-apes-chromosome-12-1"
+class="slide level2">
+<h2>Genetic divergence between the great apes: chromosome 12</h2>
 <p><img data-src="figs/murillo/greatapes_dxy.png" /></p>
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <p><img
 data-src="figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png" /></p>
@@ -1003,9 +1062,15 @@ class="invisible" style="height:80.0%" /></p>
 <section id="other-applications" class="slide level2">
 <h2>Other applications</h2>
 <ul>
-<li>inference of recombination rate maps (ReLearNN)</li>
-<li>inference of mean dispersal distance (disperseNN)</li>
-<li>history of <em>Nebria</em> beetles</li>
+<li><p>inference of recombination rate maps (Jeff Adrion;
+ReLERNN)</p></li>
+<li><p>inference of mean dispersal distance (Chris Smith;
+disperseNN)</p></li>
+<li><p>history of <em>Nebria</em> beetles (Gilia Patterson, Sean
+Schoville, Yi-Ming Weng)</p></li>
+<li><p>inference of maps of population density</p></li>
+<li><p>and individual movement</p></li>
+<li><p>identification of regions under selection</p></li>
 </ul>
 </section>
 <section id="software-development-goals" class="slide level2">
@@ -1022,10 +1087,13 @@ class="invisible" style="height:80.0%" /></p>
 </ul>
 <div class="centered">
 <figure>
-<img data-src="figs/popsim.png" style="width:50.0%" alt="popsim logo" />
+<img data-src="figs/popsim.png" style="width:35.0%" alt="popsim logo" />
 <figcaption aria-hidden="true">popsim logo</figcaption>
 </figure>
 </div>
+<p><a
+href="https://popsim-consortium.github.io/stdpopsim-docs/stable/index.html">PopSim
+Consortium</a></p>
 </div><div class="column" style="width:50%;">
 <div class="centered">
 <figure>
@@ -1080,18 +1148,18 @@ Co-Lab</a></li>
 <li>Ben Haller</li>
 <li>Ben Jeffery</li>
 <li>Yan Wong</li>
-<li>Elsie Chevy <!--
+<li>Elsie Chevy</li>
+<li>Madeline Chase</li>
+<li>Sean Stankowski</li>
+<li>Matt Streisfeld <!--
 - Georgia Tsambos
 - Jaime Ashander
 - Jared Galloway
-- Madeline Chase
 - Gideon Bradburd
 - Bill Cresko
 - Alison Etheridge
 - Evan McCartney-Melstad
 - Brad Shaffer
-- Sean Stankowski
-- Matt Streisfeld
 --></li>
 </ul>
 </div>
@@ -1104,7 +1172,7 @@ style="width:70.0%" /></p>
 </div>
 </div>
 </section>
-<section id="section-10" class="slide level2"
+<section id="section-9" class="slide level2"
 data-background-image="figs/guillemots_thanks.png"
 data-background-position="center" data-background-size="50%">
 <h2 data-background-image="figs/guillemots_thanks.png"
