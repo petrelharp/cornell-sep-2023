@@ -15,7 +15,8 @@ figs: correlated-pi-examples.png \
 		cor-pidxy-dT_selected-mutvar-sims_1.png \
 		cor-pidxy-dT_selected-negative.png \
 		cor-pidxy-dT_selected-positive.png \
-		cor-pidxy-dT_selected-both.png
+		cor-pidxy-dT_selected-both.png \
+		conceptual_tree_option2.png
 
 
 include ../../rules.mk

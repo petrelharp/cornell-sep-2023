@@ -436,10 +436,13 @@ class="title-slide slide level1">
 </section>
 <section id="the-main-idea" class="slide level2">
 <h2>The main idea</h2>
-<p>If we <em>record the tree sequence</em> that relates everyone to
+<p>Genomes are very big.</p>
+<div class="fragment">
+<p>But, if we <em>record the tree sequence</em> that relates everyone to
 everyone else,</p>
 <p>after the simulation is over we can put neutral mutations down on the
 trees.</p>
+</div>
 <div class="fragment">
 <p>Since neutral mutations don’t affect demography,</p>
 <p>this is <em>equivalent</em> to having kept track of them
@@ -498,6 +501,401 @@ style="width:100.0%" /></p>
 </div>
 </div>
 </div>
+<!-- Great apes -->
+</section></section>
+<section>
+<section id="landscapes-of-genetic-diversity"
+class="title-slide slide level1">
+<h1>Landscapes of genetic diversity</h1>
+<p><a
+href="https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2"><img
+data-src="figs/murillo/bioRxiv.png" class="floatleft"
+style="width:70.0%"
+alt="https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2" /></a></p>
+<div class="caption floatright">
+<p><img data-src="figs/murillo.jpeg" style="width:80.0%" /></p>
+<p><a href="https://www.m-rodrigues.me/">Murillo Rodrigues</a></p>
+</div>
+</section>
+<section id="landscapes-of-genetic-diversity-within-groups-of-species"
+class="slide level2">
+<h2>Landscapes of genetic diversity within groups of species</h2>
+<p><img data-src="figs/murillo/correlated-pi-examples.png"
+style="width:80.0%" /></p>
+<div class="caption floatright">
+<p><a
+href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391">Stankowski,
+Chase et al. (2019)</a>; <a
+href="https://onlinelibrary.wiley.com/doi/10.1111/mec.14083">Van Doren
+et al. (2017)</a>; <a
+href="https://academic.oup.com/evlett/article/1/3/118/6697077">Buri
+(2017)</a></p>
+</div>
+</section>
+<section id="the-study-system" class="slide level2">
+<h2>The study system</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>High quality genomic data for 5 species</li>
+<li>Deep divergence, spanning ~60N generations</li>
+<li>Conservation of genes, recombination rate and other genomic
+features</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<figure>
+<img data-src="figs/murillo/greatapes.png"
+alt="Phylogeny of the great apes from Javier-Prado et al. (2013) Nature" />
+<figcaption aria-hidden="true">Phylogeny of the great apes from
+Javier-Prado et al. (2013) Nature</figcaption>
+</figure>
+<div class="caption flushright">
+<p><a href="https://www.nature.com/articles/nature12228">Javier-Prado et
+al. (2013)</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="genetic-diversity-in-the-great-apes-chromosome-12"
+class="slide level2">
+<h2>Genetic diversity in the great apes: chromosome 12</h2>
+<p><img data-src="figs/murillo/greatapes_pi.png" /></p>
+</section>
+<section id="genetic-divergence-between-the-great-apes-chromosome-12"
+class="slide level2">
+<h2>Genetic divergence between the great apes: chromosome 12</h2>
+<p><img data-src="figs/murillo/greatapes_dxy.png" /></p>
+</section>
+<section id="goals" class="slide level2"
+data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom" data-background-size="60%">
+<h2 data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom" data-background-size="60%">Goals</h2>
+<ul>
+<li>How correlated are landscapes for closely related species?</li>
+<li>How much is due to shared footprints of
+<ul>
+<li>history?</li>
+<li>selection? what kind?</li>
+<li>mutational processes?</li>
+</ul></li>
+</ul>
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
+class="invisible" style="height:80.0%" /></p>
+</section>
+<section class="slide level2">
+
+<div class="centered">
+<p><img data-src="figs/murillo/far_divergence_tree.png"
+style="width:80.0%" /></p>
+</div>
+</section>
+<section id="a-quick-primer" class="slide level2"
+data-background-image="figs/murillo/far_divergence_tree.png"
+data-background-position="top 200px right 50px"
+data-background-size="30%">
+<h2 data-background-image="figs/murillo/far_divergence_tree.png"
+data-background-position="top 200px right 50px"
+data-background-size="30%">A quick primer</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li class="fragment">Genetic diversity (<span
+class="math inline">\(\pi\)</span>) and divergence (<span
+class="math inline">\(d_{XY}\)</span>) are <em>time since common
+ancestor</em> multiplied by <em>effective mutation rate</em>: <span
+class="math display">\[ \pi, d_{XY} = T_\text{MRCA} \times
+\mu_\text{effective} . \]</span></li>
+<li class="fragment">Higher mutation rate <span
+class="math inline">\(\Rightarrow\)</span> higher <span
+class="math inline">\(\pi\)</span> and faster increase of <span
+class="math inline">\(d_{XY}\)</span>.</li>
+<li class="fragment">Positive selection <em>increases</em> fixation rate
+of new mutations <span class="math inline">\(\Rightarrow\)</span> <span
+class="math inline">\(d_{XY}\)</span> goes up faster,</li>
+<li class="fragment">… but, it <em>decreases</em> <span
+class="math inline">\(\pi\)</span> nearby.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p><strong>linked selection:</strong> The indirect effects of selection
+on genomic locations that are <em>linked</em> to the sites under
+selection by a lack of recombination.</p>
+<p>Selection tends to <em>decrease</em> diversity, over a distance
+determined by recombination rate.</p>
+<div class="centered">
+<p><img data-src="figs/sweep_haps.png" class="fragment"
+style="width:40.0%" /> <img data-src="figs/background_haps.png"
+class="fragment" style="width:40.0%" /></p>
+</div>
+<!--
+----------------------
+![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
+-->
+</section>
+<section id="diversity-correlates-with-recombination-rate"
+class="slide level2">
+<h2>Diversity correlates with recombination rate</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<figure>
+<img
+data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png"
+style="width:85.0%" alt="Corbett-Detig et al" />
+<figcaption aria-hidden="true">Corbett-Detig et al</figcaption>
+</figure>
+</div><div class="column" style="width:20%;">
+<p><em>Hudson 1994; Cutter &amp; Payseur 2013; Corbett-Detig et al
+2015</em></p>
+</div>
+</div>
+<!-- Divergence landscapes changing over time (from Murillo) -->
+</section>
+<section id="how-diversity-landscapes-change" class="slide level2">
+<h2>How diversity landscapes change</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/close_divergence_tree.png" /></p>
+</div><div class="column" style="width:50%;">
+<p><img
+data-src="figs/murillo/two_spp_neutral_div_landscapes_0N.jpg" /></p>
+</div>
+</div>
+</section>
+<section id="how-diversity-landscapes-change-1" class="slide level2">
+<h2>How diversity landscapes change</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+
+</div><div class="column" style="width:50%;">
+<p><img
+data-src="figs/murillo/two_spp_neutral_div_landscapes.gif" /></p>
+</div>
+</div>
+</section>
+<section id="how-diversity-landscapes-change-2" class="slide level2">
+<h2>How diversity landscapes change</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/far_divergence_tree.png" /></p>
+</div><div class="column" style="width:50%;">
+<p><img
+data-src="figs/murillo/two_spp_neutral_div_landscapes_4N.jpg" /></p>
+</div>
+</div>
+</section>
+<section id="how-can-landscapes-stay-correlated" class="slide level2">
+<h2>How can landscapes stay correlated?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>shared processes:
+<ul>
+<li>positive, negative selection</li>
+<li>mutation rate variation</li>
+<li>GC-biased gene conversion</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/two_spp_sel_div_landscapes_0N.jpg" /></p>
+</div>
+</div>
+</section>
+<section id="how-can-landscapes-stay-correlated-1" class="slide level2">
+<h2>How can landscapes stay correlated?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>shared processes:
+<ul>
+<li>positive, negative selection</li>
+<li>mutation rate variation</li>
+<li>GC-biased gene conversion</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/two_spp_sel_div_landscapes.gif" /></p>
+</div>
+</div>
+</section>
+<section id="how-can-landscapes-stay-correlated-2" class="slide level2">
+<h2>How can landscapes stay correlated?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>shared processes:
+<ul>
+<li>positive, negative selection</li>
+<li>mutation rate variation</li>
+<li>GC-biased gene conversion</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/two_spp_sel_div_landscapes_4N.jpg" /></p>
+</div>
+</div>
+<!-- End divergence landscapes changing over time -->
+</section>
+<section id="slimulations" class="slide level2">
+<h2>SLiMulations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Chromosome-scale simulation (chr12)</li>
+<li>selection on annotated exons (from Ensembl via <a
+href="https://popsim-consortium.github.io/stdpopsim-docs/main/catalog.html#sec_catalog_HomSap_annotations">stdpopsim</a>)</li>
+<li>deCode genetic map</li>
+<li>branches simulated independently with SLiM and merged <a
+href="https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html">tskit</a></li>
+<li>runtime: days to weeks</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/murillo/demog_tubes_greatapes.png" /></p>
+</div>
+</div>
+</section>
+<section id="back-to-the-data" class="slide level2">
+<h2>Back to the data</h2>
+<div class="centered">
+<p><img data-src="figs/murillo/greatapes_pi.png" style="width:70.0%" />
+<img data-src="figs/murillo/greatapes_dxy.png"
+style="width:70.0%" /></p>
+</div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img
+data-src="figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png" /></p>
+<p><img data-src="figs/murillo/trees-with-dt.png" /></p>
+</section>
+<section
+id="the-data-empirical-correlations-for-chromosome-12-in-the-great-apes"
+class="slide level2">
+<h2>The data: empirical correlations for chromosome 12 in the great
+apes</h2>
+<p><img data-src="figs/murillo/cor-pidxy-dT_data.png" /></p>
+</section>
+<section id="no-correlation-under-neutrality" class="slide level2"
+data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">
+<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">No
+correlation under neutrality</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>correlations decay to zero quickly with split time</li>
+</ul>
+</div><div class="column" style="width:70%;">
+<p><img data-src="figs/murillo/corr-pidxy-land-panel_neutral.png" /></p>
+</div>
+</div>
+</section>
+<section id="mutation-rate-variation-can-contribute"
+class="slide level2"
+data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">
+<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right"
+data-background-size="30%">Mutation rate variation can contribute</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>but correlations do not decay with time</li>
+</ul>
+</div><div class="column" style="width:70%;">
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-mutvar-sims_1.png"
+class="centered" style="width:80.0%" /></p>
+</div>
+</div>
+</section>
+<section id="negative-selection-produces-weak-correlations"
+class="slide level2"
+data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">
+<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right"
+data-background-size="30%">Negative selection produces weak
+correlations</h2>
+<p><img
+data-src="figs/murillo/cor-pidxy-dT_selected-negative.png" /></p>
+</section>
+<section id="positive-selection-produces-strong-correlations"
+class="slide level2"
+data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">
+<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right"
+data-background-size="30%">Positive selection produces strong
+correlations</h2>
+<ul>
+<li>sometimes too strong</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<p><span class="math display">\[ \vphantom{ d_{xy} = \pi_\text{anc}
+\nearrow + \mu T_\text{MRCA} \searrow } \]</span></p>
+</div>
+</div>
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
+class="centered" /></p>
+<!--
+
+## Positive selection produces strong correlations {data-background-image="figs/murillo/cor-pidxy-dT_data.png" data-background-position="top 100px right" data-background-size=30%}
+
+:::: {.columns}
+:::::::: {.column width=30%}
+
+::::
+:::::::: {.column width=70%}
+
+$$ { d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
+
+::::
+::::::::
+
+![](figs/murillo/cor-pidxy-dT_selected-positive.png){.centered}
+
+-->
+</section>
+<section id="the-best-fit-both" class="slide level2"
+data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right" data-background-size="30%">
+<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
+data-background-position="top 100px right"
+data-background-size="30%">The best fit: both!</h2>
+<ul>
+<li>chosen from 37 distinct simulations</li>
+<li>deleterious mutations: <span class="math inline">\(1.2 \times
+10^{-8}\)</span></li>
+<li>beneficial mutations: <span
+class="math inline">\(10^{-12}\)</span></li>
+</ul>
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-both.png"
+class="centered" style="width:60.0%" /></p>
+</section>
+<section id="conclusions" class="slide level2"
+data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom" data-background-size="60%">
+<h2 data-background-image="figs/murillo/landscapes_cover.png"
+data-background-position="bottom"
+data-background-size="60%">Conclusions</h2>
+<ul>
+<li>positive selection most necessary for a good fit</li>
+<li>best guess: <span class="math inline">\(\approx 10\%\)</span> of
+fixations on human lineage due to positive selection (1/250 years);</li>
+<li><span class="math inline">\(\approx\)</span> 70% of mutations in
+exons deleterious</li>
+<li>fixation rate in exons reduced by half</li>
+<li>GC-biased gene conversion causes “smile” at ends of chromosomes</li>
+</ul>
+<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
+class="invisible" style="height:80.0%" /></p>
 <!-- Snewts -->
 </section></section>
 <section>
@@ -527,7 +925,7 @@ alt="Victoria Caudill" />
 href="https://evolution.berkeley.edu/biological-warfare-and-the-coevolutionary-arms-race/coevolution/">evolution.berkeley.edu</a></p>
 </div>
 </section>
-<section id="section-7" class="slide level2"
+<section id="section-8" class="slide level2"
 data-background-image="figs/snewts/snewt-lit.png"
 data-background-position="top" data-background-width="60%">
 <h2 data-background-image="figs/snewts/snewt-lit.png"
@@ -624,7 +1022,7 @@ simulation</figcaption>
 </div>
 </div>
 </section>
-<section id="conclusions" class="slide level2">
+<section id="conclusions-1" class="slide level2">
 <h2>Conclusions</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -653,406 +1051,6 @@ alt="Victoria Caudill" />
 </div>
 </div>
 </div>
-<!-- Great apes -->
-</section></section>
-<section>
-<section id="landscapes-of-genetic-diversity"
-class="title-slide slide level1">
-<h1>Landscapes of genetic diversity</h1>
-<p><a
-href="https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2"><img
-data-src="figs/murillo/bioRxiv.png" class="floatleft"
-style="width:70.0%"
-alt="https://www.biorxiv.org/content/10.1101/2023.02.07.527547v2" /></a></p>
-<div class="caption floatright">
-<p><img data-src="figs/murillo.jpeg" style="width:80.0%" /></p>
-<p><a href="https://www.m-rodrigues.me/">Murillo Rodrigues</a></p>
-</div>
-</section>
-<section id="landscapes-of-genetic-diversity-within-groups-of-species"
-class="slide level2">
-<h2>Landscapes of genetic diversity within groups of species</h2>
-<p><img data-src="figs/murillo/correlated-pi-examples.png"
-style="width:80.0%" /></p>
-<div class="caption floatright">
-<p><a
-href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000391">Stankowski,
-Chase et al. (2019)</a>; <a
-href="https://onlinelibrary.wiley.com/doi/10.1111/mec.14083">Van Doren
-et al. (2017)</a>; <a
-href="https://academic.oup.com/evlett/article/1/3/118/6697077">Buri
-(2017)</a></p>
-</div>
-</section>
-<section id="the-study-system" class="slide level2">
-<h2>The study system</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>High quality genomic data for 5 species</li>
-<li>Deep divergence, spanning ~60N generations</li>
-<li>Conservation of genes, recombination rate and other genomic
-features</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<figure>
-<img data-src="figs/murillo/greatapes.png"
-alt="Phylogeny of the great apes from Javier-Prado et al. (2013) Nature" />
-<figcaption aria-hidden="true">Phylogeny of the great apes from
-Javier-Prado et al. (2013) Nature</figcaption>
-</figure>
-<div class="caption flushright">
-<p><a href="https://www.nature.com/articles/nature12228">Javier-Prado et
-al. (2013)</a></p>
-</div>
-</div>
-</div>
-</section>
-<section id="genetic-diversity-in-the-great-apes-chromosome-12"
-class="slide level2">
-<h2>Genetic diversity in the great apes: chromosome 12</h2>
-<p><img data-src="figs/murillo/greatapes_pi.png" /></p>
-</section>
-<section id="genetic-divergence-between-the-great-apes-chromosome-12"
-class="slide level2">
-<h2>Genetic divergence between the great apes: chromosome 12</h2>
-<p><img data-src="figs/murillo/greatapes_dxy.png" /></p>
-</section>
-<section id="goals" class="slide level2"
-data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom" data-background-size="60%">
-<h2 data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom" data-background-size="60%">Goals</h2>
-<ul>
-<li>How correlated are landscapes for closely related species?</li>
-<li>How much is due to shared footprints of
-<ul>
-<li>history?</li>
-<li>selective forces?</li>
-<li>mutational processes?</li>
-</ul></li>
-</ul>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
-class="invisible" style="height:80.0%" /></p>
-</section>
-<section class="slide level2">
-
-<figure>
-<img
-data-src="figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png"
-alt="Langley et al 2012" />
-<figcaption aria-hidden="true">Langley et al 2012</figcaption>
-</figure>
-</section>
-<section id="diversity-correlates-with-recombination-rate"
-class="slide level2">
-<h2>Diversity correlates with recombination rate</h2>
-<div class="columns">
-<div class="column" style="width:80%;">
-<figure>
-<img
-data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png"
-style="width:85.0%" alt="Corbett-Detig et al" />
-<figcaption aria-hidden="true">Corbett-Detig et al</figcaption>
-</figure>
-</div><div class="column" style="width:20%;">
-<p><em>Hudson 1994; Cutter &amp; Payseur 2013; Corbett-Detig et al
-2015</em></p>
-</div>
-</div>
-</section>
-<section id="a-quick-primer" class="slide level2">
-<h2>A quick primer</h2>
-<ul>
-<li class="fragment">Genetic diversity (<span
-class="math inline">\(\pi\)</span>) and divergence (<span
-class="math inline">\(d_{XY}\)</span>) are <em>time since common
-ancestor</em> multiplied by <em>effective mutation rate</em>: <span
-class="math display">\[ \pi, d_{XY} = T_\text{MRCA} \times
-\mu_\text{effective} . \]</span></li>
-<li class="fragment">Higher mutation rate <span
-class="math inline">\(\Rightarrow\)</span> higher <span
-class="math inline">\(\pi\)</span> and faster increase of <span
-class="math inline">\(d_{XY}\)</span>.</li>
-<li class="fragment">Positive selection <em>increases</em> fixation rate
-of new mutations <span class="math inline">\(\Rightarrow\)</span> <span
-class="math inline">\(d_{XY}\)</span> goes up faster,</li>
-<li class="fragment">… but, it <em>decreases</em> <span
-class="math inline">\(\pi\)</span> nearby.</li>
-<li class="fragment">More generally, selection tends to
-<em>decrease</em> <span class="math inline">\(\pi\)</span>, over a
-distance determined by recombination rate.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<dl>
-<dt>linked selection</dt>
-<dd>
-<p>The indirect effects of selection on genomic locations that are
-<em>linked</em> to the sites under selection by a lack of
-recombination.</p>
-</dd>
-</dl>
-<div class="centered">
-<p><img data-src="figs/sweep_haps.png" class="fragment"
-style="width:40.0%" /> <img data-src="figs/background_haps.png"
-class="fragment" style="width:40.0%" /></p>
-</div>
-<!-- Divergence landscapes changing over time (from Murillo) -->
-</section>
-<section id="how-diversity-landscapes-change" class="slide level2">
-<h2>How diversity landscapes change</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/close_divergence_tree.png" /></p>
-</div><div class="column" style="width:50%;">
-<p><img
-data-src="figs/murillo/two_spp_neutral_div_landscapes_0N.jpg" /></p>
-</div>
-</div>
-</section>
-<section id="how-diversity-landscapes-change-1" class="slide level2">
-<h2>How diversity landscapes change</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-
-</div><div class="column" style="width:50%;">
-<p><img
-data-src="figs/murillo/two_spp_neutral_div_landscapes.gif" /></p>
-</div>
-</div>
-</section>
-<section id="how-diversity-landscapes-change-2" class="slide level2">
-<h2>How diversity landscapes change</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/far_divergence_tree.png" /></p>
-</div><div class="column" style="width:50%;">
-<p><img
-data-src="figs/murillo/two_spp_neutral_div_landscapes_4N.jpg" /></p>
-</div>
-</div>
-</section>
-<section id="how-can-landscapes-be-correlated" class="slide level2">
-<h2>How can landscapes be correlated?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>shared ancestral variation</li>
-<li>shared processes:
-<ul>
-<li>positive, negative selection</li>
-<li>mutation rate variation</li>
-<li>GC-biased gene conversion</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/two_spp_sel_div_landscapes_0N.jpg" /></p>
-</div>
-</div>
-</section>
-<section id="how-can-landscapes-be-correlated-1" class="slide level2">
-<h2>How can landscapes be correlated?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>shared ancestral variation</li>
-<li>shared processes:
-<ul>
-<li>positive, negative selection</li>
-<li>mutation rate variation</li>
-<li>GC-biased gene conversion</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/two_spp_sel_div_landscapes.gif" /></p>
-</div>
-</div>
-</section>
-<section id="how-can-landscapes-be-correlated-2" class="slide level2">
-<h2>How can landscapes be correlated?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>shared ancestral variation</li>
-<li>shared processes:
-<ul>
-<li>positive, negative selection</li>
-<li>mutation rate variation</li>
-<li>GC-biased gene conversion</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/two_spp_sel_div_landscapes_4N.jpg" /></p>
-</div>
-</div>
-<!-- End divergence landscapes changing over time -->
-</section>
-<section id="genetic-diversity-in-the-great-apes-chromosome-12-1"
-class="slide level2">
-<h2>Genetic diversity in the great apes: chromosome 12</h2>
-<p><img data-src="figs/murillo/greatapes_pi.png" /></p>
-</section>
-<section id="genetic-divergence-between-the-great-apes-chromosome-12-1"
-class="slide level2">
-<h2>Genetic divergence between the great apes: chromosome 12</h2>
-<p><img data-src="figs/murillo/greatapes_dxy.png" /></p>
-</section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-<p><img
-data-src="figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png" /></p>
-<p><img data-src="figs/murillo/trees-with-dt.png" /></p>
-</section>
-<section
-id="the-data-empirical-correlations-for-chromosome-12-in-the-great-apes"
-class="slide level2">
-<h2>The data: empirical correlations for chromosome 12 in the great
-apes</h2>
-<p><img data-src="figs/murillo/cor-pidxy-dT_data.png" /></p>
-</section>
-<section id="slimulations" class="slide level2">
-<h2>SLiMulations</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Chromosome-scale simulation (chr12)</li>
-<li>selection on annotated exons (from Ensembl via <a
-href="https://popsim-consortium.github.io/stdpopsim-docs/main/catalog.html#sec_catalog_HomSap_annotations">stdpopsim</a>)</li>
-<li>branches simulated independently with SLiM and merged <a
-href="https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html">tskit</a></li>
-<li>runtime: days to weeks</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="figs/murillo/demog_tubes_greatapes.png" /></p>
-</div>
-</div>
-</section>
-<section id="the-data-chromosome-12" class="slide level2">
-<h2>The data: chromosome 12</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<p><img data-src="figs/murillo/cor-pidxy-dT_data.png" /></p>
-</div>
-</div>
-</section>
-<section id="no-correlation-under-neutrality" class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">No
-correlation under neutrality</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li>correlations decay quickly with split time</li>
-</ul>
-</div><div class="column" style="width:70%;">
-<p><img data-src="figs/murillo/corr-pidxy-land-panel_neutral.png" /></p>
-</div>
-</div>
-</section>
-<section id="mutation-rate-variation-can-contribute"
-class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right"
-data-background-size="30%">Mutation rate variation can contribute</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li>but correlations do not decay with time</li>
-</ul>
-</div><div class="column" style="width:70%;">
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-mutvar-sims_1.png"
-class="centered" style="width:80.0%" /></p>
-</div>
-</div>
-</section>
-<section id="negative-selection-produces-weak-correlations"
-class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right"
-data-background-size="30%">Negative selection produces weak
-correlations</h2>
-<p><img
-data-src="figs/murillo/cor-pidxy-dT_selected-negative.png" /></p>
-</section>
-<section id="positive-selection-produces-strong-correlations"
-class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right"
-data-background-size="30%">Positive selection produces strong
-correlations</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<p><span class="math display">\[ \vphantom{ d_{xy} = \pi_\text{anc}
-\nearrow + \mu T_\text{MRCA} \searrow } \]</span></p>
-</div>
-</div>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
-class="centered" /></p>
-</section>
-<section id="positive-selection-produces-strong-correlations-1"
-class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right"
-data-background-size="30%">Positive selection produces strong
-correlations</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<p><span class="math display">\[ { d_{xy} = \pi_\text{anc} \nearrow +
-\mu T_\text{MRCA} \searrow } \]</span></p>
-</div>
-</div>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
-class="centered" /></p>
-</section>
-<section id="the-best-fit-both" class="slide level2"
-data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right" data-background-size="30%">
-<h2 data-background-image="figs/murillo/cor-pidxy-dT_data.png"
-data-background-position="top 100px right"
-data-background-size="30%">The best fit: both!</h2>
-<ul>
-<li>deleterious mutations: <span class="math inline">\(1.2 \times
-10^{-8}\)</span></li>
-<li>beneficial mutations: <span
-class="math inline">\(10^{-12}\)</span></li>
-<li>choice</li>
-</ul>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-both.png"
-class="centered" style="width:60.0%" /></p>
-</section>
-<section id="conclusions-1" class="slide level2"
-data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom" data-background-size="60%">
-<h2 data-background-image="figs/murillo/landscapes_cover.png"
-data-background-position="bottom"
-data-background-size="60%">Conclusions</h2>
-<ul>
-<li>best fit chosen from 37 distinct simulations</li>
-<li>GC-biased gene conversion causes “smile” at ends of chromosomes</li>
-<li>positive selection necessary for a good fit</li>
-<li>best guess: <span class="math inline">\(\approx 10\%\)</span> of
-fixations on human lineage due to positive selection</li>
-</ul>
-<p><img data-src="figs/murillo/cor-pidxy-dT_selected-positive.png"
-class="invisible" style="height:80.0%" /></p>
 </section></section>
 <section>
 <section id="wrap-up" class="title-slide slide level1">
@@ -1164,9 +1162,10 @@ Co-Lab</a></li>
 </ul>
 </div>
 <div class="floatright">
-<p><img data-src="figs/tskit_logo.png" style="width:40.0%"
-alt="tskit logo" /> <img data-src="figs/slim_logo.png"
-style="width:40.0%" alt="SLiM logo" /> <img data-src="figs/colab.png"
+<p><img data-src="figs/KernRalph_5x5.png" style="width:20.0%" /> <img
+data-src="figs/tskit_logo.png" style="width:30.0%" alt="tskit logo" />
+<img data-src="figs/slim_logo.png" style="width:30.0%"
+alt="SLiM logo" /> <img data-src="figs/colab.png"
 style="width:70.0%" /></p>
 </div>
 </div>
