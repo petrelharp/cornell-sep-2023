@@ -1,6 +1,6 @@
 ---
 title: "Simulation-based inference for ecology and evolution"
-author: "Peter Ralph"
+author: "Peter Ralph // University of Oregon"
 date: "Computational Biology <br/> Cornell // 15 Sep 2023"
 ---
 
